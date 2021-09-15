@@ -1,6 +1,6 @@
 <?php
 
-namespace QueryFilters;
+namespace HosseinSheikh\QueryFilters;
 
 use HosseinSheikh\QueryFilters\Contracts\Filter;
 
