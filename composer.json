@@ -1,0 +1,45 @@
+{
+    "name": "hosseinsheikh/query-filters",
+    "description": "query filters",
+    "license": "MIT",
+    "keywords": ["laravel", "laravel8-package", "laravel-package", "laravel-query-filters", "laravel8-query-filters", "PHP", "laravel8", "laravel-query-filters", "laravel8-query-filters"],
+    "license": "MIT",
+    "homepage": "https://github.com/hosseinsheikh-web/query-filters",
+    "authors": [
+        {
+            "name": "Hossein Sheikh",
+            "email": "hosseinsheikh.web@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/contracts": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "HosseinSheikh\\QueryFilters\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HosseinSheikh\\QueryFilters\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HosseinSheikh\\QueryFilters\\Providers\\QueryFiltersServiceProvider"
+            ],
+            "aliases": {
+                "QueryFilters": "HosseinSheikh\\QueryFilters\\Facades\\QueryFiltersFacade"
+            }
+        }
+    }
+}
